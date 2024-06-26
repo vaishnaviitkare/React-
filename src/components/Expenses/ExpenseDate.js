@@ -1,3 +1,4 @@
+import React from 'react';
 import "./ExpenseDate.css"
 const months = [
   "January",
@@ -13,7 +14,7 @@ const months = [
   "November",
   "December",
 ];
-function ExpenseDate(props){
+const ExpenseDate=(props)=>{
   const month = months[props.date.getMonth()];
   const year = props.date.getFullYear();
   const date = props.date.getDate()<10?'0'+props.date.getDate():props.date.getDate();
