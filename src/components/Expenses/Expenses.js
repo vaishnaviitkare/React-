@@ -10,7 +10,6 @@ const Expenses=(props)=>{
           <ExpenseItem
           key={expen.id}
           date={expen.date}
-          location={expen.location}
           title={expen.title}
           price={expen.price}
           >
