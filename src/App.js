@@ -11,6 +11,7 @@ const App=()=> {
   ]);
   const saveExpenseDataHandler=(enteredData)=>{
     console.log(enteredData);
+    //adding previously updated expenses plus the new entered value using spred array
     setExpenses((prevExpenses)=>{
       return [enteredData,...prevExpenses];
     })

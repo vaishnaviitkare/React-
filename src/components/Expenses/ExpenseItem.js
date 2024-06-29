@@ -4,9 +4,7 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 const ExpenseItem=(props)=> {
   const [title,setTitle]=useState(props.title);
-  function buttonClick(){
-    setTitle("New Title");
-  }
+ 
     //we wrap of many div or items in one div because js can return one item at a time
     return(
         <Card className="expense-item">
@@ -15,7 +13,6 @@ const ExpenseItem=(props)=> {
           <h2>{title}</h2>
           <div className="expense-item__price">${props.price}</div>
         </div>
-        <button onClick={buttonClick}>Clicked</button>
       </Card>
       );
   }
